@@ -1,0 +1,1235 @@
+:root {
+    --brand: #d91d22;
+    --dark: #000018;
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: normal;
+    color: var(--dark);
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--dark);
+    transition: all 0.4s ease;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+footer {overflow: hidden;}
+.text-brand {
+    color: var(--brand) !important;
+}
+
+
+.top.nav-item, .p-rel, #trading-network, #technical-analysis .container, #trading-platform .accordion-item {position: relative;}
+
+.hero-slider{margin-bottom: 80px;}
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    display: grid;
+    place-items: center;
+    color: #fff !important;
+    border-radius: 100px;
+    line-height: 0;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50%;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span{border-radius: 0px;}
+
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+    background-color: var(--brand) !important; 
+}
+
+.owl-dot.active span{
+    background-color: var(--brand) !important;
+}
+
+.hero-slider .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom .owl-dots .owl-dot{
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.custom .owl-dots .owl-dot span{
+    height: 1px;
+    margin: 0;
+}
+
+.custom .owl-nav [class*=owl-]{
+    color: var(--brand);
+    font-size: 30px;
+    padding: 0px 20px 4px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid var(--brand);
+}
+
+.custom .owl-nav [class*=owl-]:hover{
+    color: #ffffff;
+    background: var(--brand);
+}
+
+ /* slide */
+ .slide {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+}
+
+.slide1 {
+    background: url("https://www.dooprimeio.com/wp-content/uploads/2022/03/banner-2022.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    background: url("https://www.dooprimeio.com/wp-content/uploads/2022/04/homepage-banner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide3 {
+    background: url("https://www.dooprimeio.com/wp-content/uploads/2022/03/home-banner-4.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.slide4 {
+    background: url("https://www.dooprimeio.com/wp-content/uploads/2022/03/home-banner-3.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide .display-4,.slide h5 {
+    font-weight: 200;
+}
+.slide h5{max-width: 375px;}
+.slide4 h2, .slide4 h5{color:#00501f;}
+
+.slide .btn{
+    width: 14vw;
+    max-width: 200px;
+    margin-top: 40px;
+    min-width: 150px;
+}
+
+
+/* navbar */
+.top-nav {background-color: var(--dark)}
+
+.navbar {
+    z-index: 1020;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+
+
+#topbarNav .nav-link {
+    color: white;
+    font-weight: 300;
+    padding: 3px 1vw;
+}
+
+#topbarNav .nav-link:hover {color: var(--brand)}
+
+.nav-link.demo::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: var(--brand);
+    margin: 0 0 0 2vw;
+    
+}
+
+.nav-link.lang::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/common/icon-arrow-down.webp) scroll no-repeat center / contain;
+    vertical-align: middle;
+    margin-top:-5px;
+}
+
+.top-nav-dropdown {
+    background-color: var(--dark);
+    padding: 4px 12px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0 8px 8px rgb(10 10 10 / 10%);
+    display: none;
+    font-size: 16px;
+    min-width: 100%;
+    position: absolute;
+    z-index: 1021;
+    top: 100%;
+
+}
+.nav-item:hover .top-nav-dropdown{display: block;} 
+
+.dropdown-toggle::after{border: none;}
+
+.top-navbar-item {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: 200;
+    padding: 5px 0px;
+}
+
+.navbar-item {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 5px 0px;
+    
+}
+
+
+.site-logo {
+    width: 160px;
+    height: 38px;
+    margin-right: auto;
+    background: transparent url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/common/logo-dp-dark.svg) no-repeat scroll center / contain;
+}
+
+.footer-logo {
+    width: 240px;
+    height: 80px;
+    background: transparent url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/common/logo-dp-dark.svg) no-repeat scroll center / contain;
+    display: block;
+}
+
+.sticky{
+    --bs-bg-opacity: 1;
+    background-color: #fafafa !important;
+    position: -webkit-sticky;
+    position: fixed !important;
+    top:0;
+    box-shadow: var(--shadow);
+}
+
+
+.navbar .navbar-nav {
+    margin: auto;
+    padding: 22px 0;
+
+}
+
+@media (min-width: 1080px) {
+.navbar .nav-item {
+    padding: 0 0.5vw;
+    }}
+
+@media (min-width: 1980px) {
+.navbar .nav-item {
+    padding: 0 10px;
+    }}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.megamenu h6 {
+    border-left: 2px solid var(--brand);
+    margin-bottom: 30px;
+    padding-left: 8px;
+}
+
+.nav-img-icon {
+    padding: 0px 0px 1rem;
+    width: 15vw;
+    max-width: 120px;
+    height: 15vw;
+    max-height: 105px;
+}
+
+
+.btn-nav{
+    width: 10vw;
+    max-width: 180px;
+    min-width: 80px;}
+
+.btn {
+    padding: 10px 1vw;
+}
+
+.btn-brand {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand-2 {
+    border-color: var(--brand);
+    background-color: #fff;
+    color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: #ec5c5a;
+    border-color: #ec5c5a;
+    color: #fff;
+}
+
+.btn-brand-2:hover {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+
+
+.intro {
+    margin-bottom: 36px;
+    text-align: center;}
+
+.intro-2 {margin-bottom: 60px;}
+
+
+.intro h1, .intro-2 h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+.te-desc {
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.te-desc h5, .te-desc-m h5, .aw-desc h5 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+
+.te-desc-m {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 15px;
+    max-width: 768px;
+    margin: auto;
+}
+
+.te-desc-m img, .te-desc img, .aw-desc img  {
+    max-width: 280px;
+    display: inline !important;
+}
+
+#trading-funding .container {
+    background: url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/homepage/map.svg) no-repeat scroll 100%;
+}
+
+.payment-group {
+    max-width: 450px;
+}
+
+.payment-group img {
+    margin: 0 50px 50px 0;
+}
+
+img.visa {
+    width: 25%;
+    max-width: 150px;
+}
+
+img.mastercard {
+    width: 15%;
+    max-width: 85px;
+}
+
+img.skrill {
+    width: 25%;
+    max-width: 150px;
+}
+
+img.neteller {
+    width: 45%;
+    max-width: 240px;
+}
+
+img.epay {
+    width: 30%;
+    max-width: 165px;
+    margin-top: 10px;
+}
+
+.number {
+    color: var(--brand);
+    font-size: 32px;
+    margin-right: 6px;
+    font-weight: 700;
+    vertical-align: sub;
+}
+
+#trading-funding img.element-left {
+    position:absolute;
+    width: 55%;
+    top: 70%;
+    left: -15%;
+}
+
+#trading-funding img.element-right {
+    position:absolute;
+    width: 55%;
+    top: -10%;
+    left: 60%;
+}
+
+.tf-left{max-width: 70vw;}
+.tf-left img{border-radius: 50px;}
+
+
+
+#trading-account .element-top{
+    position: absolute;
+    max-width: 780px;
+    width: 60%;
+    left: 50%;
+    top: -1rem;
+    transform: translate(-50%, 0);  
+}
+
+#trading-account img.element-left {
+    position: absolute;
+    top: 25%;
+    right: 75%;
+    z-index: -1;
+    width: 30%;
+    max-width: 400px;
+}
+
+#trading-account img.element-right {
+    position:absolute;
+    top: 40%;
+    left: 75%;
+    z-index: -1;
+    width: 30%;
+    max-width: 400px;
+}
+
+.ta-desc img, .ta-desc-m img {
+    max-height: 55px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+#trading-account .col-lg-4:not(:last-child) {
+    border-right: 1px solid #e4e4e4;
+}
+
+.ta-table{
+    padding: 48px 0px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.ta-desc {
+    padding: 0px 30px;
+}
+
+.ta-desc-m {
+    padding: 48px 30px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-width: 450px;
+    margin: auto;
+}
+
+#trading-account .list{
+    padding:48px 0;
+}
+
+#trading-account li.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trading-account li.list-item:not(:last-child) {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+}
+
+#trading-account .owl-stage-outer{padding: 40px 0px;}
+
+#trading-account li.list-item p, #trading-account li.list-item h2, #trading-platform .accordion-button h3  {
+    margin: 0;
+}
+
+#trading-platform .icon {
+    max-width: 50px;
+    margin-right: 50px;
+}
+
+#trading-platform .accordion-button:not(.collapsed) h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 48px;
+    background-color: var(--brand);
+}
+#trading-platform .accordion-button:not(.collapsed) h3 {color:inherit;}
+#trading-platform .accordion-button:not(.collapsed) {
+    color: var(--brand) !important;}
+
+
+#trading-platform .accordion-button:not(.collapsed), #trading-platform .accordion-item {
+    background: transparent;
+}
+
+#trading-platform .accordion-button:not(.collapsed):before, #trading-platform .accordion-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(to right, #f5f5f6, #ffffff);
+  z-index: -1;
+}
+
+#trading-platform .accordion-button.collapsed:before{
+content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  background: #ffffff;
+  z-index: -1;
+}
+    
+#trading-platform .accordion-item::after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-image: linear-gradient(to right, #f5f5f6, #ffffff);
+    position: absolute;
+    left: 50%;
+  transform: translateX(-50%);
+    z-index: 1;
+}
+#trading-platform .container {
+    padding: 0;
+}
+
+#trading-platform .accordion-item {
+    border: none;
+}
+
+#trading-platform .accordion-button {
+    padding: 30px 20px;
+}
+
+#trading-platform .accordion-item:first-of-type, #trading-platform .accordion-item:last-of-type {
+    border-radius: 0px;
+}
+
+.dw-plat {
+    padding: 30px 0px;
+    margin-top: 30px;
+    border-top: 1px solid #e4e4e4;
+}
+
+#trading-platform .dw-plat i {
+    font-size: xxx-large;
+    margin-right: 5px;
+}
+
+#trading-platform .dw-plat a i {
+    font-size: xx-large;
+    margin: 5px 0px 0px;
+    border-left: 1px solid #e4e4e4;
+    padding-left: 8px;
+}
+
+#trading-platform .dw-plat .dw-items .dw-item {
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: var(--shadow);
+    margin-bottom:25px;
+}
+
+#trading-platform .dw-plat p{margin-bottom: 20px;}
+
+#trading-platform .dw-plat h6 {
+    flex: 1;
+    margin: 0;
+    font-weight: bold;
+}
+#trading-platform .visual-right, #trading-platform .visual-right-2, #trading-platform .visual-right-3   {visibility: hidden;}
+#trading-platform .show .visual-right, #trading-platform .show .visual-right-2, #trading-platform .show .visual-right-3 {visibility: visible;}
+
+#trading-platform .accordion-body .col-lg-6.aos-init.aos-animate {
+    z-index: 999;
+}
+
+.tn-desc img {
+    max-width: 1200px;
+    z-index: -1;
+    margin: auto;
+    display: block;
+}
+  
+#trading-network .link-group img {
+    max-height: 10vw;
+    max-width: fit-content;
+    background: white;
+    padding: 15px 30px;
+    box-shadow: var(--shadow);
+    border-radius: 30px;
+    margin: 0px 10px;
+}
+
+
+#technical-analysis .owl-dots .owl-dot span {
+    width: 10vw;
+    max-width: 10rem;
+}
+
+
+
+
+#global-globe {
+    background: #f8fafb;
+}
+
+#global-globe .gg-desc .col-6:nth-last-child(n+3) {
+    margin-bottom: 40px;
+}
+
+
+#latest-news .nav-tabs .nav-link {
+    background: #e4e4e4;
+    border-radius: 0px;
+}
+
+#latest-news .nav-tabs .nav-item.show .nav-link, #latest-news .nav-tabs .nav-link.active {
+    color: var(--brand);
+    background-color: #fff;
+    border-color: #e4e4e4 #e4e4e4 #fff;
+    border-radius: 0px;
+}
+
+#latest-news .nav-link, .footer-compliance .nav-link{
+    padding: 1rem 0.5rem;
+    color: var(--dark);}
+
+
+.news-post {
+    position: relative;
+    background-color: #fff;
+    margin-top: 1.5rem;
+}
+
+.news-post .content {
+    padding: 15px 0px 20px;
+}
+
+.news-post h5 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#latest-news .btn-brand{
+    margin-top:60px;
+}
+
+
+.footer-nav {
+    background: #f7f8f9;
+    padding: 80px 0 0px;
+}
+
+footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+
+footer .social-icons {
+    display: flex;
+    font-size: 30px;
+    margin: 0px -10px 0;
+}
+.footer-contact {
+    padding: 50px 0 10px;
+}
+.footer-contact h6 {
+    margin-top: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px 0px 25px;
+}
+
+footer h6 {
+    font-weight: bold;
+    margin: 10px 0px 20px;
+}
+
+footer p {
+    font-size: small;
+    margin-bottom: 0.5rem;
+}
+
+#footer-accordion li {
+    padding-bottom: 10px;
+}
+
+.footer-nav .accordion-button, .footer-compliance .accordion-button {
+    padding: 10px 20px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.footer-nav .accordion-item, .footer-compliance .accordion-item {
+    border: 0px;
+    border-radius: 0px !important;
+    background: transparent;
+}
+
+.footer-nav .accordion-body, .footer-compliance .accordion-body {
+    padding: 0 20px;
+}
+
+#footer-accordion span {
+    font-size: 12px;
+    color: var(--dark);
+    border-left: 2px solid var(--brand);
+    padding-left: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-compliance{
+    background-color: #eff1f3;
+    padding: 30px 0px;}
+
+#fcTab {
+    padding: 0px;
+    margin: 30px 0 15px;
+}
+
+.footer-compliance .nav-link{
+    border: none;
+    font-weight: bold;}
+
+.footer-compliance .nav-link:hover, .footer-compliance .nav-link.active{
+    color:var(--brand);
+}
+
+.footer-compliance .nav-tabs .nav-item.show .nav-link, .footer-compliance .nav-tabs .nav-link.active {
+    background: transparent;
+    border-bottom: 1px solid var(--brand);
+}
+
+.footer-compliance .nav-tabs{
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+}
+
+#fcTabContent .col-lg-6, .de-content {
+    margin-bottom: 30px;
+}
+
+#fcTabContent a p, .footer-nav-accordion a p{
+    margin: 0px;
+}
+
+.footer-bottom-nav{padding-top: 20px;}
+
+.footer-bottom-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;}
+
+.footer-bottom-nav ul li {
+    position: relative;
+    padding: 8px 16px;
+}
+
+.footer-bottom-nav ul li:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 8px;
+    background-color: var(--dark);
+}
+
+.footer-bottom-nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-bottom {
+    padding: 20px;
+    background: var(--dark);
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 1199px){
+    .container, .container-lg, .container-md, .container-sm {
+    max-width: 100% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    
+    .navbar {padding: 20px 0px;}
+    .navbar-white{background-color: white !important;}
+    .navbar-white .justify-content-end {margin:auto;padding-top: 20px;}
+    .navbar-white .btn-nav{width:40vw;}
+
+    .navbar-light .navbar-toggler {
+    border-color: transparent;
+    color: transparent;
+    margin-left: -0.5rem;
+    padding: 0.25rem 1rem;
+    }
+    
+    .site-logo {
+    width: 135px;
+    height: 32px;}
+    
+    .navbar-nav {
+    padding: 20px 12px 0px;
+}   
+    .navbar-item {
+    display: flex;
+    align-items: center;
+    }
+    
+    li.nav-item.h {
+    padding: 10px 0px;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    }
+    
+    .has-megamenu {
+    padding: 10px 0px;
+    border-bottom: 1px solid #e4e4e4;
+    }
+
+    .dropdown-menu {
+    background: transparent;
+    border: none;
+}
+    
+    .dropdown-toggle::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+    display: initial;
+}
+    
+    .dropdown-toggle:is(.show)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);}
+    
+    .navbar-nav {
+    max-height: 70vh;
+	overflow-y: auto;
+    }
+    
+    .megamenu h6 {
+    margin-bottom: 20px;
+    margin-top: 20px;}
+    
+    #navbar .btn-nav {width: 20vw;}
+    
+    .payment-group {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .intro-2 {
+        text-align: center;
+    }
+    
+    .payment-group img {
+        margin: 0 25px 50px;
+    }
+    
+    .link-group {
+    display: flex;
+    }
+    
+    .tf-left{padding-bottom: 90px;}
+    
+    #technical-analysis .owl-controls{
+        margin: 20px 0px 60px;
+        width: 100%
+    }
+    
+    #technical-analysis .owl-dots .owl-dot span {
+        width: 30vw;
+        max-width: 30vw;
+    }
+    
+    #latest-news .owl-dots .owl-dot span{
+        width: 12.5vw;
+        max-width: 12.5vw;
+    }
+    
+   .btn-nav {
+        width: -webkit-fill-available;
+    }
+    
+    #global-globe .gg-desc .col-6{
+        text-align: center;
+    }
+    
+    #latest-news .nav-tabs .nav-link {
+        min-width: 30vw;
+    }
+    
+    
+    #aufc-banner {
+    background-image: url(https://www.dooprimeio.com/wp-content/themes/DP3-1104/style/images/homepage/footer-banner-aufc-mobile.png);
+    max-height: 350px;
+    height: 60vw;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+    footer .social-icons a {
+    padding: 0 7vw 30px 0;
+}   
+    .footer-nav .col-md-5ths, .footer-nav-accordion .col-12 {
+    border-top: 1px solid #e4e4e4;
+}
+    .footer-nav .col-md-5ths:last-child, .footer-nav-accordion .col-12:last-child {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+
+.footer-nav .col-lg-3, .footer-compliance .container {
+    padding: 0px 30px;
+}
+
+
+
+#footer-accordion ul {
+    padding: 0;
+}
+
+    .footer-nav-accordion{width: 100vw;margin-top: 30px;}   
+    .footer-nav-accordion .row {padding: 0px; margin-left: -18px;} 
+
+}
+
+@media (min-width: 992px) {
+    .navbar:hover {background: #fafafa;}
+    .navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .navbar .has-megamenu{position:static!important;}
+    .navbar .megamenu{
+        top:100%;
+        left:0; 
+        right:0; 
+        width:100%; 
+        margin-top:0;
+        box-shadow: 0 8px 8px rgb(10 10 10 / 10%);
+        padding: 60px 0px;
+        font-size: 16px;
+        border:none;
+        border-radius: 0px;
+    }
+    
+    
+    .navbar-item {
+    display: block;
+    }
+
+    .navbar-item p {
+        width: 120px;
+        text-align: center;
+        margin-left: -10px;
+    }
+    
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+    
+    footer .col-md-5ths {
+    padding: 0px;
+    }
+    
+    #tools .megamenu {
+    background-image: url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/homepage/Doo-Prime-tools.png);
+    background-position: calc(100% - 96px) calc(100% + 40px);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#trading .megamenu{
+    background-image: url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/homepage/Doo-Prime-trading.png);
+    background-position: calc(100% - 4vw);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partner .megamenu {
+    background-image: url(https://www.dooprime.com/wp-content/themes/DP3-1104/style/images/homepage/aniversary.png);
+    background-position: calc(100% - 4vw);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#about-us .megamenu {
+    background-image: url(https://www.dooprimeio.com/wp-content/themes/DP3-1104/style/images/homepage/Doo-Prime-about-us.png);
+    background-position: calc(100% - 4vw);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+    
+    .nc-left{ 
+    border-right: 1px solid #eaeaea;
+    padding-right: 40px;
+}
+
+.nc-right{padding-left: 40px;}
+    
+    #trading-network .intro-2{
+    position: absolute;
+    max-width: 500px;
+    top: 10%;
+    right:50%;
+    transform: translateX(120%);
+}
+    .myfxbook img {
+    top: 13%;
+    left: 50%;
+    transform: translateX(-140%);
+    position: absolute;
+}
+
+
+    .followme img {
+    top: 47%;
+    left: 50%;
+    transform: translateX(46%);
+    position: absolute;
+}
+
+    .outrade img {
+    top: 71%;
+    left: 50%;
+    transform: translateX(-85%);
+    position: absolute;
+}
+    
+    #trading-platform .accordion-body {padding: 0px 0px 0px 120px;}
+    #technical-analysis .owl-theme .owl-dots, .owl-theme .owl-nav{
+    text-align: left;
+}
+    
+    #trading-platform .visual-right {
+    position: absolute;
+    z-index: 99;
+    width: 75%;
+    top: -15%;
+    left: 50%;
+    
+}    
+    #trading-platform .visual-right-2 {
+    position: absolute;
+    z-index: 99;
+    width: 90%;
+    bottom: -30%;
+    left: 55%;
+    
+}
+       #trading-platform .visual-right-3 {
+    position: absolute;
+    z-index: 99;
+    width: 75%;
+    bottom: 0;
+    left: 50%;
+    
+} 
+    #technical-analysis .btn-brand {
+    margin-top: 200px;}
+    
+    #technical-analysis .owl-theme.custom {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    }
+    
+    #latest-news li.nav-item:first-child .nav-link{border-top-left-radius: 10px;}
+    #latest-news li.nav-item:last-child .nav-link{border-top-right-radius: 10px;}
+    
+    
+    #aufc-banner {
+    background-image: url(https://www.dooprimeio.com/wp-content/themes/DP3-1104/style/images/homepage/footer-banner-aufc.jpg);
+    max-height: 240px;
+    height: 16vw;
+    background-position: center;
+    background-size: cover;
+        padding: 0;}
+    
+    .footer-nav{padding-bottom: 60px;}
+    footer .social-icons a {
+    padding-right: 20px;
+    flex: 1;
+}
+    footer .accordion-button:not(.collapsed)::after, footer .accordion-button::after{display: none;}
+    footer .accordion-button {
+    pointer-events: none;
+  }
+  footer .accordion-collapse.collapse:not(.show) {
+    display: block;
+  }
+}
+    
+@media (min-width: 768px) and (max-width: 991px){
+     #latest-news .owl-dots .owl-dot span{
+        width: 24vw;
+        max-width: 24vw;
+    }
+}
+
+    @media (max-width: 539px){
+         #latest-news .nav-tabs .nav-link {
+             min-height: 13vh;}
+        #navbar .btn-brand-2 {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--dark);
+    margin-right: -30px;
+}
+
+#navbar .btn {
+    padding: 5px 1vw;
+}
+    }
+        }
+
+
+
+
+
